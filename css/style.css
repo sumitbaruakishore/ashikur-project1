@@ -1,0 +1,369 @@
+/* *COMMON CSS */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+  --primary-color:#FFCC00;
+  --secondary-color:#353535;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1106px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--font-family);
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    border-radius: 20px;
+    padding: 16px 45px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    
+   font-weight: 600;
+   font-size: 20px;
+   
+   border: 1px solid var(--primary-color);
+
+}
+.btn.arrow{
+   background-color: transparent;
+   color: var(--secondary-color);
+   border: 1px solid var(--secondary-color);
+   padding: 16px 18px;
+   
+}
+.btn i{
+    padding-left: 10px;
+}
+.btn.sec i{
+    padding-left: 5px;
+}
+/* *COMMON CSS ENDS */
+/* NAV STARTS */
+nav .logo{
+    width: 30%;
+    padding-top: 30px;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    
+    color: var(--secondary-color);
+    padding: 18px 22px 5px;
+    display: inline-block;
+    position: relative;
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease-in-out;
+}
+nav .menu ul li:hover a::after{
+        width: 100%;
+    
+}
+
+/* NAV ENDS */
+/* HERO SECTION STARTS */
+#hero{
+    margin-top: 56px;
+}
+
+#hero .hero-text,
+#hero .hero-image{
+    width: 50%;
+    padding-top: 60px;
+}
+#hero .hero-text h4 img{
+    padding-left: 20px;
+}
+#hero .hero-text h4{
+   font-weight: 400;
+   font-size: 24px;
+    color: var(--secondary-color);
+}
+#hero .hero-text h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--secondary-color);
+    margin: 15px 0px 25px;
+}
+#hero .hero-text p{
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--secondary-color);
+    padding-bottom: 45px;
+}
+#hero .hero-text .btn{
+    margin-right: 40px;
+}
+#hero .hero-text .btn:hover{
+    box-shadow: 0 10px 20px rgba(240, 167, 10, 0.7);
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#hero .hero-text .btn.arrow:hover{
+    box-shadow: 0 10px 20px rgb(53, 53, 53);
+    cursor: pointer;
+    background-color: transparent;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#hero .hero-text ul li{
+    
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 180%;
+   padding-top: 66px;
+    color: var(--secondary-color)
+    
+
+}
+
+#hero .hero-text ul li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: black;
+    margin-left: 32px;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    line-height: 40px;
+    background-color: #F4F3F3;
+}
+
+#hero .hero-text ul li a:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+
+#hero .mouse {
+    text-align: center;
+   font-size: 30px;
+   padding: 11px 0 75px 0;
+   cursor: pointer;
+}
+#hero .mouse:hover i{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+/* HERO SECTION ENDS */
+
+/* ABOUT ME START */
+#about{
+    background-image: url(../images/Rectangle\ 50.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+#about .about-img{
+    width: 50%;
+    
+}
+
+#about .about-text{
+    width: 50%;
+    text-align: left;
+    padding: 77px 0 103px 34px;
+    position: relative;
+}
+#about .about-text h4{
+   font-weight: 700;
+   font-size: 50px;
+   color: var(--secondary-color);
+   
+}
+#about .about-text p{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 190%;
+   color: var(--secondary-color);
+   margin: 26px 0px 45px 0px;
+}
+#about .about-text a{
+    
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 180%;
+   color:var(--secondary-color);
+}
+#about .about-text .btn.arrow{
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    width: 171px;
+    height: 66px;
+    padding: 17px 43px;
+    display: block;
+}
+#about .about-text .btn.arrow:hover{
+    box-shadow: 0 10px 20px rgb(53, 53, 53);
+    cursor: pointer;
+    background-color: transparent;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#about .about-text .ellips{
+    position: absolute;
+    width: 208px;
+    height: 208px;
+    border-radius: 50%;
+    
+    right: 22px;;
+    bottom: -104px;
+}
+
+/* ABOUT ME ENDS */
+
+/* CARD DETAILS START */
+#card-details{
+    padding: 151px 0px 165px 0px;
+    background-color: #F5F5F5;
+}
+#card-details .row .cards h3{
+    font-family: var(--font-family);
+   font-weight: 600;
+   font-size: 22px;
+    line-height: 180%;
+    text-align: center;
+   color: var(--secondary-color);
+   margin: 18px;
+
+}
+#card-details .det-card .cards p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+text-align: center;
+color: #7a7a7a;
+}
+.det-card{
+    flex-wrap: wrap;
+    gap:28px;
+    justify-content: center;
+}
+.det-card .cards{
+    
+    width: 33.33%;
+    border-radius: 20px;
+    width: 350px;
+    height: 367px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 39px 0 57px 0;
+    
+}
+.det-card .cards:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    transition: 0.8s;
+}
+
+/* CARD DETAILS ENDS */
+/* BRANDING START */
+#branding{
+    background-color: #F5F5F5;
+}
+#branding .container{
+    background: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+    border-radius: 30px;
+    width: 1110px;
+    height: 485px;
+    padding-top: 18px;
+    overflow: hidden;
+}
+#branding .brand-img{
+    width: 50%;
+}
+#branding .brand-details{
+    width: 50%;
+    text-align: left;
+    padding: 78px 0 86px 34px;
+    position: relative;
+}
+#branding .brand-details h3{
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+#branding .brand-details p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    margin: 26px 0 45px 0;
+    color: var(--secondary-color);
+}
+#branding .brand-details a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+}
+#branding .brand-details .btn.arrow{
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 16px 44px; 
+}       
+#branding .brand-details .btn.arrow:hover {
+    box-shadow: 0 10px 20px rgb(53, 53, 53);
+    cursor: pointer;
+    background-color: transparent;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#branding .brand-details .content-img img{
+    position: absolute;
+    right: 250px;
+    bottom: 25%;
+    padding-top: 3px;
+}   
+/* BRANDING ENDS */
